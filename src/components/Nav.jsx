@@ -1,12 +1,14 @@
+import './nav.css';
+
 const Nav = () => {
-	return (<nav>
-		<ul>
-			<li><a href='/'>Home</a></li>
-			<li><a href='/about'>About</a></li>
-			<li><a href='/menu'>Menu</a></li>
-			<li><a href='/reservations'>Reservations</a></li>
-			<li><a href='/order'>Order online</a></li>
-			<li><a href='/login'>Login</a></li>
+	return (<nav class="main-nav">
+		<ul class="main-nav__ul">
+			<li class="main-nav__li"><a class="main-nav__a" href='/'>Home</a></li>
+			<li class="main-nav__li"><a class="main-nav__a" href='/about'>About</a></li>
+			<li class="main-nav__li"><a class="main-nav__a" href='/menu'>Menu</a></li>
+			<li class="main-nav__li"><a class="main-nav__a" href='/reservations'>Reservations</a></li>
+			<li class="main-nav__li"><a class="main-nav__a" href='/order'>Order online</a></li>
+			<li class="main-nav__li"><a class="main-nav__a" href='/login'>Login</a></li>
 		</ul>
 	</nav>)
 }

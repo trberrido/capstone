@@ -1,0 +1,42 @@
+:root {
+	--sitewidth: 50rem;
+	--markazi: 'Markazi Text', serif; 	/* 800 700 500 400 */
+	--karla:'Karla', sans-serif;		/* 500 400 */
+}
+
+header {
+	max-width: var(--sitewidth);
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2rem 0;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+footer {
+	max-width: var(--sitewidth);
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2rem 0;
+	align-items: start;
+	flex-wrap: wrap;
+}
+
+img { border-radius: 1rem }
+
+a { text-decoration: none ;}
