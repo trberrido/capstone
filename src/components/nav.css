@@ -1,5 +1,5 @@
 .main-nav__a {
 	font-family: var(--karla);
 	font-weight: 800;
-	color: black;
+	color: var(--dark);
 }

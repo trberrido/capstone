@@ -1,7 +1,7 @@
 import logo from '../assets/Logo.svg'
 
 const Header = ({children}) => {
-	return (<header>
+	return (<header class='content-column'>
 		<img alt='' src={logo} />
 		{children}
 	</header>)

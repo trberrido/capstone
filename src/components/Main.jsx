@@ -1,5 +1,9 @@
+import Homepage from "./Homepage";
+
 const Main = () => {
-	return (<main></main>)
+	return (<main>
+		<Homepage />
+	</main>)
 }
 
 export default Main;

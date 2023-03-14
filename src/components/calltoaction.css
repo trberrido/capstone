@@ -1,0 +1,40 @@
+.cta__bg {
+	background-color: var(--p1);
+}
+
+.cta {
+	padding: 3rem 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+.cta__rightcolumn {
+	position: absolute;
+	top: 1rem;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+}
+
+.cta-title__line {
+	display: block;
+}
+
+.cta-title__firstline {
+	color: var(--p2);
+	margin: 0;
+}
+.cta-title__secondline {
+	color: white;
+	font-size: 2.5rem;
+	line-height: 0;
+	margin-bottom: 3rem;
+}
+
+.cta__paragraph {
+	color: white;
+	max-width: 15rem;
+	margin-bottom: 3rem;
+}

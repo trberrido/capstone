@@ -2,11 +2,22 @@
 	--sitewidth: 50rem;
 	--markazi: 'Markazi Text', serif; 	/* 800 700 500 400 */
 	--karla:'Karla', sans-serif;		/* 500 400 */
+	--p1: #495E57;
+	--p2: #F4CE14;
+	--s1: #EE9972;
+	--s2: #FBDABB;
+	--s3: #EDEFEE;
+	--s4: #333333;
+	--dark: var(--s4);
+}
+
+.content-column {
+	max-width: var(--sitewidth);
+	margin: auto;
 }
 
 header {
-	max-width: var(--sitewidth);
-	margin: auto;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -27,8 +38,6 @@ nav ul {
 }
 
 footer {
-	max-width: var(--sitewidth);
-	margin: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -39,4 +48,31 @@ footer {
 
 img { border-radius: 1rem }
 
-a { text-decoration: none ;}
+a {
+	text-decoration: none ;
+	font-weight: 800;
+	font-family: var(--karla);
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--markazi);
+	margin: 0;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+p {
+	font-family: var(--karla);
+	color: var(--p1);
+	font-size: 1rem;
+}
