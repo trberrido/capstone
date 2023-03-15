@@ -58,7 +58,7 @@ a {
 }
 
 a:hover {
-	opacity: .5;
+	opacity: .9;
 	transition: opacity .2s;
 }
 

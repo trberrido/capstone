@@ -14,14 +14,14 @@ const Review = ({name, img, rating, comment}) => {
 		'★ ★ ★ ★ ★'
 	];
 	return (
-		<article class='review-card'>
-			<div class='review-card__padding'>
-				<p class='review-card__rating'>{stars[rating]}</p>
-				<div class='review-card__id'>
-					<div class='review-card__img' style={{backgroundImage:`url(${img})`}}></div>
-					<h2 class='review-card__name'>{name}</h2>
+		<article className='review-card'>
+			<div className='review-card__padding'>
+				<p className='review-card__rating'>{stars[rating]}</p>
+				<div className='review-card__id'>
+					<div className='review-card__img' style={{backgroundImage:`url(${img})`}}></div>
+					<h2 className='review-card__name'>{name}</h2>
 				</div>
-				<p class='review-card__comment'>{comment}</p>
+				<p className='review-card__comment'>{comment}</p>
 			</div>
 		</article>
 	);
@@ -56,12 +56,13 @@ const CustomersSay = () => {
 
 	];
 	return (
-	<section class='content-column'>
-		<h1 class='testimonials__title'>Testimonials</h1>
-		<div class='reviews-container'>
+	<section className='content-column'>
+		<h1 className='testimonials__title'>Testimonials</h1>
+		<div className='reviews-container'>
 			{
 				reviews.map(review => (
 					<Review
+						key={review.name}
 						name={review.name}
 						img={review.img}
 						rating={review.rating}

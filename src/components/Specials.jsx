@@ -7,14 +7,14 @@ import bruschetta from '../assets/warm-bruschetta-1.jpg'
 
 const RecipeCard = ({title, price, description, img}) => {
 	return (
-		<article class='recipe-card'>
-			<div style={{backgroundImage: `url(${img})`}} class='recipe-card__img' />
-			<div class='recipe-card__padding' >
-				<div class='recipe-card__header'>
-					<h2 class='recipe-card__title'>{title}</h2>
-					<p class='recipe-card__price'>${price}</p>
+		<article className='recipe-card'>
+			<div style={{backgroundImage: `url(${img})`}} className='recipe-card__img' />
+			<div className='recipe-card__padding' >
+				<div className='recipe-card__header'>
+					<h2 className='recipe-card__title'>{title}</h2>
+					<p className='recipe-card__price'>${price}</p>
 				</div>
-				<p class='recipe-card__description'>{description}</p>
+				<p className='recipe-card__description'>{description}</p>
 			</div>
 		</article>
 	);
@@ -42,15 +42,16 @@ const Specials = () => {
 		}
 	];
 	return (
-		<section class='content-column'>
-			<div class='specials__header'>
+		<section className='content-column'>
+			<div className='specials__header'>
 				<h1>This weeks specials!</h1>
 				<Button href='/menu' label='Online Menu' />
 			</div>
-			<div class='recipes__container'>
+			<div className='recipes__container'>
 				{
 					recipes.map((recipe) => (
 						<RecipeCard
+							key={recipe.title}
 							price={recipe.price}
 							description={recipe.description}
 							title={recipe.title}

@@ -4,20 +4,20 @@ import ctaPicture from '../assets/restauranfood.jpg';
 
 const CallToAction = () => {
 	return (
-	<section class="cta__bg">
-		<div class='cta content-column'>
-			<div class='cta__leftcolumn'>
-				<h1 class='cta__title'>
-					<span class='cta-title__line cta-title__firstline'>Little Lemon </span>
-					<span class='cta-title__line cta-title__secondline'>Chicago</span>
+	<section className="cta__bg">
+		<div className='cta content-column'>
+			<div className='cta__leftcolumn'>
+				<h1 className='cta__title'>
+					<span className='cta-title__line cta-title__firstline'>Little Lemon </span>
+					<span className='cta-title__line cta-title__secondline'>Chicago</span>
 				</h1>
-				<p class='cta__paragraph'>
+				<p className='cta__paragraph'>
 					We are a family ownded mediterranean restaurant,
 					focused on traditional recipes served with a modern twist.
 				</p>
-				<Button href='book' label='Reserve a table' />
+				<Button href='booking' label='Reserve a table' />
 			</div>
-			<img class='cta__rightcolumn' alt='' src={ctaPicture} />
+			<img className='cta__rightcolumn' alt='' src={ctaPicture} />
 		</div>
 	</section>
 	);

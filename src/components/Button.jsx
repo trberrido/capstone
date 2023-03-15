@@ -1,10 +1,11 @@
 import './button.css';
+import { Link } from 'react-router-dom';
 
 const Button = ({href, label}) => {
 	return (
-	<a class='button' href={href}>
+	<Link className='button' to={href}>
 		{label}
-	</a>);
+	</Link>);
 }
 
 export default Button;

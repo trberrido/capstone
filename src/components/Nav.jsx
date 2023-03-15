@@ -1,14 +1,24 @@
 import './nav.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
-	return (<nav class="main-nav">
-		<ul class="main-nav__ul">
-			<li class="main-nav__li"><a class="main-nav__a" href='/'>Home</a></li>
-			<li class="main-nav__li"><a class="main-nav__a" href='/about'>About</a></li>
-			<li class="main-nav__li"><a class="main-nav__a" href='/menu'>Menu</a></li>
-			<li class="main-nav__li"><a class="main-nav__a" href='/reservations'>Reservations</a></li>
-			<li class="main-nav__li"><a class="main-nav__a" href='/order'>Order online</a></li>
-			<li class="main-nav__li"><a class="main-nav__a" href='/login'>Login</a></li>
+	const links = [
+		{ name: 'Home', to: '/'},
+		{ name: 'About', to: '/about'},
+		{ name: 'Menu', to: '/menu'},
+		{ name: 'Reservations', to: '/booking'},
+		{ name: 'Order online', to: '/order'},
+		{ name: 'Login', to: '/login'},
+	]
+	return (<nav className="main-nav">
+		<ul className="main-nav__ul">
+			{
+				links.map(link => (
+					<li key={link.name} className="main-nav__li">
+						<Link className="main-nav__a" to={link.to}>{link.name}</Link>
+					</li>
+				))
+			}
 		</ul>
 	</nav>)
 }

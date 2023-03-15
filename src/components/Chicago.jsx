@@ -3,17 +3,17 @@ import img from '../assets/mna.jpg';
 
 const Chicago = () => {
 	return (
-		<section class='content-column'>
-			<h1 class='chicago__title'>
-				<span class='chicago-title__line chicago-title__firstline'>Little Lemon </span>
-				<span class='chicago-title__line chicago-title__secondline'>Chicago</span>
+		<section className='content-column'>
+			<h1 className='chicago__title'>
+				<span className='chicago-title__line chicago-title__firstline'>Little Lemon </span>
+				<span className='chicago-title__line chicago-title__secondline'>Chicago</span>
 			</h1>
-			<div class='chicago-content'>
-				<p class='chicago-paragraph'>
+			<div className='chicago-content'>
+				<p className='chicago-paragraph'>
 				Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.<br />
 				Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
 				</p>
-				<img class='chicago-img' alt='' src={img} />
+				<img className='chicago-img' alt='' src={img} />
 			</div>
 		</section>
 	)
