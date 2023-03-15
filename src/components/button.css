@@ -13,3 +13,14 @@
 	transition: background-color .3s;
 	cursor: pointer;
 }
+
+.button:disabled {
+	background-color: var(--s3);
+	opacity: .5;
+}
+
+.button:disabled:hover{
+	background-color: var(--s3);
+	cursor:auto;
+	color: var(--dark);
+}

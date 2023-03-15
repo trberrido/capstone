@@ -28,11 +28,31 @@
 	text-transform: uppercase;
 }
 
+.form__input:invalid {
+	border: 1px solid red;
+}
+
+.form__hint {
+	color: var(--s1);
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
+.form__invalid .form__label,
+.form__invalid .form__input {
+	color: var(--s1);
+}
+.form__invalid .form__input {
+	border: 1px solid var(--s1);
+}
+
 .form__input {
 	padding: .5rem;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: auto;
+	border: 1px solid var(--s4);
+	border-radius: 1rem;
 }
 
 input[type='submit']{
