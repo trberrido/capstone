@@ -14,14 +14,13 @@ const Footer = () => {
 				<li class='footer__li'><a class='footer__a' href='/login'>Login</a></li>
 			</ul>
 			<p class='footer__p'>
-				Adress<br />
-				Phone Number<br />
-				email
+				1 Main St. Chicago IL<br />
+				+1(500) 400 200<br />
+				contact@llr.com
 			</p>
 			<p class='footer__p'>
-				Adress<br />
-				Phone Number<br />
-				email
+				<a target='_blank' rel='noreferrer' href='https://instagram.com'>Instagram</a><br />
+				<a target='_blank' rel='noreferrer' href='https://facebook.com'>Facebook</a>
 			</p>
 		</div>
 	</footer>)

@@ -18,6 +18,6 @@
 	padding: 0;
 }
 
-.footer__a, .footer__p {
+.footer__a, .footer__p, .footer__p a {
 	color: var(--s3);
 }
