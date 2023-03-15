@@ -2,7 +2,7 @@ import BookingForm from './BookingForm'
 import './bookingpage.css'
 import img from '../assets/restaurantchef.jpg';
 
-const BookingPage = ({availableTimes, dispatch}) => {
+const BookingPage = ({availableTimes, dispatch, date}) => {
 	return (<>
 		<div className='booking-header'>
 			<div className='content-column booking-content'>
@@ -10,7 +10,7 @@ const BookingPage = ({availableTimes, dispatch}) => {
 				<img alt='' src={img} className='booking-header__img'/>
 			</div>
 		</div>
-		<BookingForm dispatch={dispatch} availableTimes={availableTimes} />
+		<BookingForm dispatch={dispatch} date={date} availableTimes={availableTimes} />
 	</>);
 }
 

@@ -3,15 +3,15 @@ import './bookingform.css';
 
 import { submitAPI } from '../api/api.js'
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, dispatch, date }) => {
 
 	const occasionOptions = [
 		'Birthday', 'Anniversary'
 	];
 
 	const [formData, setFormData] = useState({
-		date: '',
-		time: (availableTimes && availableTimes.length) ? availableTimes[0] : null,
+		date: date.toISOString().substring(0, 10),
+		time: (availableTimes && availableTimes.length) ? availableTimes[0] : '',
 		guests: 1,
 		occasion: occasionOptions[0]
 	});
