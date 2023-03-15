@@ -1,0 +1,28 @@
+.booking-header {
+	background-color: var(--p1);
+}
+
+.booking-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.booking-header__title {
+	color: var(--s3);
+	padding: 10rem 0 5rem 0;
+	margin-bottom: 5rem;
+}
+
+.booking-header__img {
+	max-width: 20rem;
+	height: auto;
+	position: relative;
+	top: 2rem
+}
+
+@media screen and (max-width: 50rem){
+	.booking-header__img { display: none }
+
+}
