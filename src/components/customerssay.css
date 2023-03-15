@@ -5,19 +5,26 @@
 .reviews-container {
 	display: flex;
 	flex-direction: row;
-	gap: 2rem;
+	gap: 1rem;
 	flex-wrap: wrap;
 }
 
-.review-card { 
-	flex-basis: 10%;
+.review-card {
+	flex-basis: 20%;
 	flex-grow: 1;
 	flex-shrink: 1;
 	background-color: var(--s2);
+	border-radius: 1rem;
 }
 
 .review-card__padding {
-	padding: 1rem 2rem
+	padding: .5rem 1rem;
+}
+
+.review-card__rating {
+	text-align: center;
+	width: 5rem;
+	font-size: .9rem;
 }
 
 .review-card__id {

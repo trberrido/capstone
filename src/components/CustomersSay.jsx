@@ -6,12 +6,12 @@ import tania from '../assets/tania.jpg'
 
 const Review = ({name, img, rating, comment}) => {
 	const stars = [
-		'☆☆☆☆☆',
-		'★☆☆☆☆',
-		'★★☆☆☆',
-		'★★★☆☆',
-		'★★★★☆',
-		'★★★★★'
+		'☆ ☆ ☆ ☆ ☆',
+		'★ ☆ ☆ ☆ ☆',
+		'★ ★ ☆ ☆ ☆',
+		'★ ★ ★ ☆ ☆',
+		'★ ★ ★ ★ ☆',
+		'★ ★ ★ ★ ★'
 	];
 	return (
 		<article class='review-card'>
