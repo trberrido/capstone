@@ -1,9 +1,7 @@
 import { useState } from "react";
 import './bookingform.css';
 
-import { submitAPI } from '../api/api.js'
-
-const BookingForm = ({ availableTimes, dispatch, date }) => {
+const BookingForm = ({ availableTimes, dispatch, date, submitForm }) => {
 
 	const occasionOptions = [
 		'Birthday', 'Anniversary'
@@ -16,16 +14,16 @@ const BookingForm = ({ availableTimes, dispatch, date }) => {
 		occasion: occasionOptions[0]
 	});
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		submitAPI(new FormData(e.target))
-	}
-
 	const handleInput = (e) => {
 		setFormData({...formData, [e.target.name]: e.target.value})
 		if (e.target.name === 'date'){
 			dispatch({type: 'setDate', date: e.target.value});
 		}
+	}
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		submitForm(new FormData(e.target))
 	}
 
 	return (

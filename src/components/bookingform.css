@@ -39,4 +39,7 @@ input[type='submit']{
 	margin-top: 2rem;
 	display: block;
 	max-width: 15rem;
+	font-weight: 800;
+	font-family: var(--karla);
+	font-size: 1rem;
 }
