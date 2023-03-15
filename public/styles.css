@@ -13,7 +13,8 @@
 
 .content-column {
 	max-width: var(--sitewidth);
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (max-width: 50rem){
@@ -24,7 +25,6 @@
 }
 
 header {
-	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -45,12 +45,7 @@ nav ul {
 }
 
 footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 2rem 0;
-	align-items: start;
-	flex-wrap: wrap;
+	background-color: var(--dark);
 }
 
 img { border-radius: 1rem }
@@ -59,9 +54,13 @@ a {
 	text-decoration: none ;
 	font-weight: 800;
 	font-family: var(--karla);
+	transition: opacity .2s;
 }
 
-
+a:hover {
+	opacity: .5;
+	transition: opacity .2s;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--markazi);

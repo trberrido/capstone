@@ -45,7 +45,7 @@ const CustomersSay = () => {
 			name: 'Vargas',
 			img: vargas,
 			rating: 1,
-			comment: 'They were no burrito :('
+			comment: 'They were no sahimi :('
 		},
 		{
 			name: 'Tania',

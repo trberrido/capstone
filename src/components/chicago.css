@@ -1,0 +1,35 @@
+.chicago__title {
+	margin-top: 5rem;
+}
+
+.chicago-title__line {
+	display: block;
+	color: var(--dark);
+}
+
+.chicago-title__firstline {
+	margin: 0;
+}
+.chicago-title__secondline {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.chicago-content {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.chicago-img {
+	flex-basis: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+	width: 10rem;
+}
+
+.chicago-paragraph {
+	max-width: 25rem;
+}

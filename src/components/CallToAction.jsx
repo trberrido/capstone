@@ -8,7 +8,7 @@ const CallToAction = () => {
 		<div class='cta content-column'>
 			<div class='cta__leftcolumn'>
 				<h1 class='cta__title'>
-					<span class='cta-title__line cta-title__firstline'>Little Lemon</span>
+					<span class='cta-title__line cta-title__firstline'>Little Lemon </span>
 					<span class='cta-title__line cta-title__secondline'>Chicago</span>
 				</h1>
 				<p class='cta__paragraph'>
