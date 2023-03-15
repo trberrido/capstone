@@ -16,6 +16,13 @@
 	margin: auto;
 }
 
+@media screen and (max-width: 50rem){
+	.content-column {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
 header {
 	
 	display: flex;
@@ -63,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 4rem;
+	line-height: 3rem;
 	font-weight: 500;
 }
 

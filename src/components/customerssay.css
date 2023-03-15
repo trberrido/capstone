@@ -1,0 +1,45 @@
+.testimonials__title {
+	margin: 5rem 0;
+}
+
+.reviews-container {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.review-card { 
+	flex-basis: 10%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	background-color: var(--s2);
+}
+
+.review-card__padding {
+	padding: 1rem 2rem
+}
+
+.review-card__id {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.review-card__img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+}
+
+.review-card__name {
+	font-size: 1.25rem;
+	font-family: var(--karla);
+	font-weight: 700;
+}
+
+.review-card__comment { color: var(--dark)}
