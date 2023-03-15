@@ -1,11 +1,14 @@
 import { useState } from "react";
 import './bookingform.css';
 
+import { submitAPI } from '../api/api.js'
+
 const BookingForm = ({ availableTimes, dispatch }) => {
 
 	const occasionOptions = [
 		'Birthday', 'Anniversary'
 	];
+
 	const [formData, setFormData] = useState({
 		date: '',
 		time: (availableTimes && availableTimes.length) ? availableTimes[0] : null,
@@ -15,14 +18,14 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		submitAPI(new FormData(e.target))
 	}
 
 	const handleInput = (e) => {
 		setFormData({...formData, [e.target.name]: e.target.value})
-		/* if (e.target.name === 'time')
-			dispatch({type: 'remove', date: formData.date, time: e.target.value});
-		if (e.target.name === 'date')
-			dispatch({type: 'addDate', date: e.target.value, time: formData.time}); */
+		if (e.target.name === 'date'){
+			dispatch({type: 'setDate', date: e.target.value});
+		}
 	}
 
 	return (

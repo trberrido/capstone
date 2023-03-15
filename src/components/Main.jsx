@@ -4,16 +4,21 @@ import BookingPage from './BookingPage';
 import { useReducer } from "react";
 import {Routes, Route } from 'react-router-dom'
 
+import { fetchAPI } from "../api/api";
+
 const Main = () => {
-	const initializeTimes = () => [17, 18, 19, 20, 21, 22];
+
+	const initializeTimes = () => fetchAPI(new Date());
+
 	const updateTimes = (state, action) => {
-		/* if (action.type === 'addDate')
-			return (null)
-		if (action.type === 'removeTime')
-			return (null) */
+		if (action.type === 'setDate'){
+			return fetchAPI(new Date(action.date));
+		}
 		return state;
 	};
+
 	const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
+
 	return (<main>
 		<Routes>
 			<Route path="/" element={<HomePage />}></Route>
