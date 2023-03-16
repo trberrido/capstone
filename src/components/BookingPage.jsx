@@ -10,7 +10,7 @@ const BookingPage = ({availableTimes, dispatch, date, submitForm}) => {
 				<img alt='' src={img} className='booking-header__img'/>
 			</div>
 		</div>
-		<BookingForm dispatch={dispatch} submitForm={submitForm} date={date} availableTimes={availableTimes} />
+		<BookingForm dispatch={dispatch} date={date} submitForm={submitForm} availableTimes={availableTimes} />
 	</>);
 }
 

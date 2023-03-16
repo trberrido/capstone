@@ -1,4 +1,3 @@
-import { render, screen } from '@testing-library/react'
 import { updateTimes, initializeTimes } from "../api/utils.js";
 import { fetchAPI } from "../api/api.js";
 

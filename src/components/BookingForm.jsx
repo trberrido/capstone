@@ -6,7 +6,6 @@ const BookingForm = ({ availableTimes, dispatch, date, submitForm }) => {
 	const occasionOptions = [
 		'Birthday', 'Anniversary'
 	];
-
 	const guests = {
 		min: 1,
 		max: 10
@@ -70,16 +69,16 @@ const BookingForm = ({ availableTimes, dispatch, date, submitForm }) => {
 		<form aria-label="Booking form" className='form content-column' onSubmit={handleSubmit}>
 
 			<div className={(formData.dateIsValid ? "" : "form__invalid ") + "form__input-container"}>
-				<label className='form__label' htmlFor="res-date" >Choose date *</label>
-				<input className='form__input' type='date' id='res-date' name='date' onChange={handleDate} value={formData.date} required />
+				<label className='form__label' htmlFor="date" >Choose date *</label>
+				<input className='form__input' type='date' id='date' name='date' onChange={handleDate} value={formData.date} required />
 				{
 					(!formData.dateIsValid) && <p className="form__hint">It's not yet possible to book for the past.</p>
 				}
 			</div>
 
 			<div className="form__input-container">
-				<label htmlFor="res-time"  className='form__label' >Choose time *</label>
-				<select className='form__input' id='rest-time' name='time' value={formData.time} onChange={handleTime} required>
+				<label htmlFor="time"  className='form__label' >Choose time *</label>
+				<select className='form__input' id='time' name='time' value={formData.time} onChange={handleTime} required>
 					<option key='emptytime' value="">Select One</option>
 					{
 						availableTimes && availableTimes.map(option => (
@@ -91,7 +90,7 @@ const BookingForm = ({ availableTimes, dispatch, date, submitForm }) => {
 
 			<div className={(formData.guestsIsValid ? "" : "form__invalid ") + "form__input-container"}>
 				<label className='form__label' htmlFor="guests">Number of guests *</label>
-				<input className='form__input' type='number' name='guests' min={guests.min} max={guests.max} onChange={handleGuests} value={formData.guests} required />
+				<input className='form__input' type='number' id="guests" name='guests' min={guests.min} max={guests.max} onChange={handleGuests} value={formData.guests} required />
 				{
 					(!formData.guestsIsValid) && <p className="form__hint">At least one person, maximum 10 personns allowed</p>
 				}
@@ -109,7 +108,7 @@ const BookingForm = ({ availableTimes, dispatch, date, submitForm }) => {
 				</select>
 			</div>
 
-			<input disabled={!formData.dateIsValid || !formData.guestsIsValid || !formData.timeIsValid || !formData.occasionIsValid} aria-label="On Click" className='button' type='submit' value='Make your reservation'/>
+			<button disabled={!formData.dateIsValid || !formData.guestsIsValid || !formData.timeIsValid || !formData.occasionIsValid} aria-label="On Click" className='button' type='submit' >Make your reservation</button>
 		</form>
 	</>
 	);

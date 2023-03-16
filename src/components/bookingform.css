@@ -55,10 +55,10 @@
 	border-radius: 1rem;
 }
 
-input[type='submit']{
+button{
 	margin-top: 2rem;
 	display: block;
-	max-width: 15rem;
+	max-width: 20rem;
 	font-weight: 800;
 	font-family: var(--karla);
 	font-size: 1rem;
